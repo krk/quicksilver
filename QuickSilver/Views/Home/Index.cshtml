@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/dissipatedheat.quicksilver.js")"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#txtFilter').quicksilver('#lst1').focus();
+    });
+</script>
+
+<h2>Animated QuickSilver Search for Lists</h2>
+<div>
+    References:
+    <ul>
+        <li>http://rails-oceania.googlecode.com/svn/lachiecox/qs_score/trunk/qs_score.js
+        </li>
+        <li>http://ejohn.org/blog/jquery-livesearch/</li>
+    </ul>
+</div>
+<input type="text" id="txtFilter" name="txtFilter" />
+<div>
+    <ul id="lst1">
+        <li>ADBC</li>
+        <li>ABDC</li>
+        <li>JEKYLL</li>
+        <li>New Zealand</li>
+        <li>Nunemaker</li>
+        <li>Newfoundland</li>
+        <li>ABC</li>
+        <li>Richter</li>
+        <li>ABCD</li>
+        <li>Resig</li>
+        <li>Rhenium</li>
+        <li>JKL</li>
+        <li>Smooth</li>
+        <li>Smith</li>
+        <li>Mythical</li>
+    </ul>
+</div>
